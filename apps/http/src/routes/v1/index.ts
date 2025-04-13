@@ -9,6 +9,7 @@ import jwt from 'jsonwebtoken';
 import { JWT_PASSWORD } from '../../config';
 
 
+
 export const indexRouter = Router();
 
 indexRouter.post("/signup", async (req, res) => {
