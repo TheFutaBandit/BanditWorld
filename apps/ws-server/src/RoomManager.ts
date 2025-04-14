@@ -35,7 +35,7 @@ export class RoomManager {
         }
         this.rooms.get(spaceId)?.forEach((u) => {
             if(u.userId != User.userId) {
-                u.Send(message);
+                u.send(message);
             }
         })
     }
