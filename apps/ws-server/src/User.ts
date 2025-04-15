@@ -94,14 +94,14 @@ export class User {
                         }))
                     })
 
-                    // RoomManagerInstance.broadcastMessage(({
-                    //     type: "user-join",
-                    //     payload: {
-                    //         userId: this.userId,
-                    //         x: this.x,
-                    //         y: this.y,
-                    //     }
-                    // }), this.spaceId!, this);
+                    RoomManagerInstance.broadcastMessage(({
+                        type: "user-join",
+                        payload: {
+                            userId: this.userId,
+                            x: this.x,
+                            y: this.y,
+                        }
+                    }), this.spaceId!, this);
 
                     break;
 
